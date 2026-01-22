@@ -18,7 +18,9 @@ import { IsPlayer } from "./interfaces/IsPlayer.js"
 
 const shorif=new Player('shorif',40, 'bangladesh');
 // const azad=new Player('azad',90, 'bangladesh');
+
 let azad:IsPlayer;
+
 azad=new Player('azad',90, 'bangladesh');
 const players:Player[]=[];
 //console.log(shorif.name);
@@ -43,3 +45,9 @@ let threeDrimantion={
 }
 
 drowRectengole(threeDrimantion);
+
+
+function syHi(){
+    console.log("hi");
+}
+

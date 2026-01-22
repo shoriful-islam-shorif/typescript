@@ -1,4 +1,3 @@
-"use strict";
 // {const   country = "Bangladesh";
 // console.log(country);
 //     }
@@ -9,18 +8,11 @@
 //     myFunction(4,6, 'false');
 //     console.log(myFunction);
 // }
-class Player {
-    constructor(n, a, c) {
-        this.name = n;
-        this.age = a;
-        this.country = c;
-    }
-    play() {
-        console.log('${this.name} form ${this.age} is palyaing!');
-    }
-}
+import { Player } from "./classes/Player.js";
 const shorif = new Player('shorif', 40, 'bangladesh');
-const azad = new Player('azad', 90, 'bangladesh');
+// const azad=new Player('azad',90, 'bangladesh');
+let azad;
+azad = new Player('azad', 90, 'bangladesh');
 const players = [];
 //console.log(shorif.name);
 players.push(shorif);
@@ -30,7 +22,12 @@ function drowRectengole(options) {
     let width = options.width;
     let length = options.length;
 }
-drowRectengole({
+let threeDrimantion = {
     width: 40,
-    length: 7
-});
+    length: 7,
+    height: 50
+};
+drowRectengole(threeDrimantion);
+function syHi() {
+    console.log("hi");
+}
